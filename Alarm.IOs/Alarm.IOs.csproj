@@ -65,6 +65,8 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Utilities\LayoutExtension.cs" />
+    <Compile Include="Views\Alarms\AlarmList\AlarmsTableSource.cs" />
+    <Compile Include="Views\Alarms\AlarmList\AlarmsTableView.cs" />
     <Compile Include="Views\Alarms\AlarmsView.cs" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
