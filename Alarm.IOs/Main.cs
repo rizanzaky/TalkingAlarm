@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace Alarm.IOs
+namespace TalkingAlarm
 {
     public class Application
     {

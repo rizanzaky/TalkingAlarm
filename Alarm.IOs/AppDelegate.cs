@@ -1,7 +1,8 @@
 ﻿using Foundation;
+using TalkingAlarm.Controllers;
 using UIKit;
 
-namespace Blank
+namespace TalkingAlarm
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the
     // User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
@@ -20,7 +21,11 @@ namespace Blank
         {
             // create a new window instance based on the screen size
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
-            Window.RootViewController = new UIViewController();
+
+            // set root view controller
+            var rootController = new AlarmsController();
+            var navController = new UINavigationController(rootController);
+            Window.RootViewController = navController;
 
             // make the window visible
             Window.MakeKeyAndVisible();
